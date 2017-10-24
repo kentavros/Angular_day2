@@ -1,0 +1,8 @@
+<div>
+Input: <input ng-model="searchList" type="text" />
+</div>
+<div>
+<ul>
+<li ng-repeat="name in customerName | filter:searchList | orderBy">{{name}}</li>
+</ul>
+</div>
